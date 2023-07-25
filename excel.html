@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Page</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body> 
+    <h1>Excel Page</h1>
+    <form id="excelForm">
+        <label for="numbers">Enter Numbers :-</label>
+        <input type="text" id="numbers" name="numbers" required><br>
+
+        <label>Choose an Excel Function:</label><br>
+        <input type="radio" id="sum" name="excel" value="sum" checked>
+        <label for="sum">AutoSum</label><br>
+
+        <input type="radio" id="avg" name="excel" value="avg">
+        <label for="avg">Average</label><br>
+
+        <input type="radio" id="max" name="excel" value="max">
+        <label for="max">Maximum</label><br>
+
+        <input type="radio" id="min" name="excel" value="min">
+        <label for="min">Minimum</label><br>
+
+        <button type="button" id="calculateButton">Calculate</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <div id="output"></div>
+
+    <script src="Javascript/script.js"></script>
+</body>
+
+</html>
